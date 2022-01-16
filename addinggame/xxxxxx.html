@@ -1,0 +1,75 @@
+applyBtn = document.getElementById("applyButton");
+button = document.getElementById("customButton");
+ 
+applyBtn.onclick = function() {
+    bgColor = document.getElementById("bgColorInput").value;
+    fontColor = document.getElementById("fontColorInput").value;
+    fontSize = document.getElementById("fontSizeInput").value;
+    fontWeight = document.getElementById("fontWeightInput").value;
+    
+    button.style.backgroundColor = bgColor;
+    button.style.fontWeight = fontWeight;
+    button.style.fontSize = fontSize;
+    button.style.color = fontColor;
+    
+}
+
+function changeStyle(){
+    padding = document.getElementById("paddingInput").value;
+    borderRadius = document.getElementById("borderRadiusInput").value;
+    button.style.borderRadius = borderRadius;
+    button.style.padding = padding;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+applyBtn = document.getElementById("applyButton");
+applyBtn.onclick = function() {
+    button = document.getElementById("customButton");
+    bgColor = document.getElementById("bgColorInput").value;
+    fontColor = document.getElementById("fontColorInput").value;
+    fontSize = document.getElementById("fontSizeInput").value;
+    fontWeight = document.getElementById("fontWeightInput").value;
+    padding = document.getElementById("paddingInput").value;
+    borderRadius = document.getElementById("borderRadiusInput").value;
+
+    button.style.backgroundColor = bgColor;
+    button.style.fontWeight = fontWeight;
+    button.style.fontSize = fontSize;
+    button.style.color = fontColor;
+    button.style.borderRadius = borderRadius;
+    button.style.padding = padding;
+
+}
