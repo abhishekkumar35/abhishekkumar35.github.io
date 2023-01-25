@@ -12,7 +12,7 @@
         .car,
         .enemyCar {
            
-            background-image:url("https://asset.cloudinary.com/a3fcdvld162/62005956878929aebcb04145275cbc3b"); /*car up imagae*/
+            background-image:url("https://res.cloudinary.com/a3fcdvld162/image/upload/v1642093673/car_up_dabrll.png"); /*car up imagae*/
             background-color: red;
             height:80px;
             width:40px;
@@ -24,7 +24,7 @@
         }
 
         .enemyCar {
-            background-image: url("https://asset.cloudinary.com/a3fcdvld162/96106208a31c1f391160dedb53fda2fb"); /*car down imagae*/
+            background-image: url("https://res.cloudinary.com/a3fcdvld162/image/upload/v1642093673/car_down_ycq9f9.png"); /*car down imagae*/
             background-color: aliceblue;
         
         }
@@ -86,7 +86,7 @@
             
         }
         .carGame{
-            background-image: url("https://asset.cloudinary.com/a3fcdvld162/ce5078ad3c973bf7b62e7a4205e1dee9"); /* game image */
+            background-image: url("https://res.cloudinary.com/a3fcdvld162/image/upload/v1642129597/ezgif.com-gif-maker_jkiajh.gif"); /* game image */
             background-size:cover;
             
         }
