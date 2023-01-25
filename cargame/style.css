@@ -9,7 +9,7 @@
             display: none;
         }
 
-        .car,
+       
         .enemyCar {
            
             background-image:url("https://res.cloudinary.com/a3fcdvld162/image/upload/v1642093673/car_up_dabrll.png"); /*car up imagae*/
@@ -25,7 +25,16 @@
 
 
         }
-
+        .car{
+            background-image:url("https://res.cloudinary.com/a3fcdvld162/image/upload/v1642093673/car_up_dabrll.png"); /*car up imagae*/
+            background-color: red;
+            height:55px;
+            width:25px;
+            background-size:100% 100%;
+            position: absolute;
+            bottom: 120px;
+            left:120px;
+        }
         .enemyCar {
             background-image: url("https://res.cloudinary.com/a3fcdvld162/image/upload/v1642093673/car_down_ycq9f9.png"); /*car down imagae*/
             background-color: aliceblue;
