@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div>
+        <h1>English Joke</h1>
+        <h2 id="joke_setup" style="width: 400px">Loading...</h2>
+        <h3 id="joke_punchline"></h3>
+      </div>
+      <div>
+        <h1>Hindi Joke</h1>
+        <h2 id="joke" style="width: 400px">Loading...</h2>
+      </div>
+    </div>
+    <script>
+      fetch("https://official-joke-api.appspot.com/random_joke")
+        .then((response) => {
+          let data = response.json();
+          return data;
+        })
+        .then((data) => {
+          document.getElementById("joke_setup").textContent = data.setup;
+          document.getElementById("joke_punchline").textContent =
+            ">>>  " + data.punchline;
+        });
+
+      fetch(
+        "https://hindi-jokes-api.onrender.com/jokes/1?api_key=c70c8fef66c3fdc424109272bdfe"
+      )
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          document.getElementById("joke").textContent =
+            data.data[0].jokeContent + "";
+        });
+    </script>
+  </body>
+</html>
