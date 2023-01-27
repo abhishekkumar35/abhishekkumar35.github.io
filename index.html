@@ -83,6 +83,16 @@
             >Web Design</a
           >
         </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <button
+            onclick="redirectToRestaurant()"
+            class="btn btn-danger d-block"
+            style="width: 150px; margin: auto"
+          >
+            Restaurant
+          </button>
+        </div>
         <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
           <a
             href="\jokes"
@@ -120,6 +130,9 @@
           color += letters[Math.floor(Math.random() * 16)];
         }
         return color;
+      }
+      function redirectToRestaurant() {
+        window.location.replace("https://onlinefoodapp.vercel.app");
       }
     </script>
   </body>
