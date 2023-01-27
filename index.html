@@ -1,63 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="stylehome.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist\css\bootstrap.min.css" >
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-</head>
-<body>
-    <div class="home-design-background">
-        <div class="container">
-            <div class="row">            
-                <div class="col-12 project-list-container  d-flex flex-column justify-content-center">
-                    <div class="text-center project-list-sub-container">
-                        <div class="d-flex flex-row justify-content-center mb-2">
-                            <div class="name-intro">
-                                <h1 class=" text-uppercase text-light">Abhishek kumar</h1>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-center mb-2">
-                            <a href="\todoWebApp" class="btn btn-success mr-3">TODO WEB APP</a>
-                            <a href="\foodmunch" class="btn btn-warning mr-3" >Food Munch</a>
-                            <a href="\gamebombdefuse" class="btn btn-success mr-3">Defuse Bomb</b>
-                            <a href="\wikisearch" class="btn btn-dark">wiki search</a>
-                        </div>
-                        <div class="d-flex flex-row justify-content-center mb-2">
-                            <a href="\cargame" class="btn btn-success mr-3">Car Game</a>
-                            <a href="\timeconverter" class="btn btn-warning mr-3">Second Converter</a>
-                            <a href="\hidecat" class="btn btn-dark">Hide Cat</b>
-                            <a href="\design" class="btn btn-info ml-3" >Web Design</a>
-                            <a href="\jokes" class="btn btn-success ml-3" >Jokes</a>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row justify-content-center mt-5 ">
-                        <h1 id="quoteId" class="btn btn-outline-dark w-100 font-weight-bold font-italic " style="height: 100px;font-size: 50px;">Code is more than some bytes in a file.</h1> 
-        
-                    </div>
-                </div>
-            </div>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylehome.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap-4.5.3-dist\css\bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center mt-5 mb-5">
+        <h2>Abhishek Kumar</h2>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\todoWebApp"
+            class="btn btn-primary d-block"
+            style="width: 150px; margin: auto"
+            >Todo App</a
+          >
         </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\foodmunch"
+            class="btn btn-warning d-block"
+            style="width: 150px; margin: auto"
+            >Food Munch</a
+          >
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\gamebombdefuse"
+            class="btn btn-secondary d-block"
+            style="width: 150px; margin: auto"
+            >Defuse Bomb</a
+          >
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\wikisearch"
+            class="btn btn-danger d-block"
+            style="width: 150px; margin: auto"
+            >Wiki Search</a
+          >
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\cargame"
+            class="btn btn-success d-block"
+            style="width: 150px; margin: auto"
+            >Car Game</a
+          >
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\timeconverter"
+            class="btn btn-dark d-block"
+            style="width: 150px; margin: auto"
+            >Converter</a
+          >
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\hidecat"
+            class="btn btn-info d-block"
+            style="width: 150px; margin: auto"
+            >Hide Cat</a
+          >
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\design"
+            class="btn btn-warning d-block"
+            style="width: 150px; margin: auto"
+            >Web Design</a
+          >
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 p-2">
+          <a
+            href="\jokes"
+            class="btn btn-danger d-block"
+            style="width: 150px; margin: auto"
+            >Jokes</a
+          >
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="d-flex flex-row justify-content-center">
+            <p
+              id="quoteId"
+              class="btn btn-outline-dark font-weight-bold font-italic"
+            >
+              Code is more than some bytes in a file.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script>
-        
-setInterval(function(){
-    const text = document.getElementById('quoteId');
-    var color = getRandomColor();
-    text.style.color = color;
-}, 100);
+      setInterval(function () {
+        const text = document.getElementById("quoteId");
+        var color = getRandomColor();
+        text.style.color = color;
+      }, 300);
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
- </script>
-</body>
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </body>
 </html>

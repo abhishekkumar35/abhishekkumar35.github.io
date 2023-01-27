@@ -1,42 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.home-design-background{
-    background-color: #ff884c;
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:120vh;
-    
-   
+.home-design-background {
+  background-color: #ff884c;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh;
 }
-.project-list-container{
-    height:100vh;
-    width:50%;
+.project-list-container {
+  height: 100vh;
+  width: 50%;
 }
-.name-intro{
-    
-    font-family:"roboto";
-    width:40%;
-    border-width: 2px;
-    border-color:rgb(38, 206, 46);
-    font-weight: bold;
+.name-intro {
+  font-family: "roboto";
+  width: 40%;
+  border-width: 2px;
+  border-color: rgb(38, 206, 46);
+  font-weight: bold;
 }
-.project-list-sub-container{
-    border-style:solid;
-    border-radius:2px;
-    border-color:green;
-    width:100%;
-    padding-top:20px;
-    padding-bottom:20px;
+.project-list-sub-container {
+  border-style: solid;
+  border-radius: 2px;
+  border-color: green;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.quote-box {
+  background-image: url("https://res.cloudinary.com/getmedia/image/upload/v1638455621/Screenshot_346_qcnjmz.png");
+  background-size: contain;
+  width: 50%;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: green;
+  font-weight: 900px;
+  color: white;
+  font-size: 16px;
+}
+#quoteId {
+  font-size: 50px;
+}
 
+@media screen and (max-width: 997px) {
+  #quoteId {
+    font-size: 40px;
+  }
 }
-.quote-box{
-    background-image:url("https://res.cloudinary.com/getmedia/image/upload/v1638455621/Screenshot_346_qcnjmz.png");
-    background-size: contain;
-    width:50%;
-    border-style:solid;
-    border-radius: 2px;
-    border-color:green;
-    font-weight:900px;
-    color:white;
-    font-size:16px;
+
+@media screen and (max-width: 797px) {
+  #quoteId {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  #quoteId {
+    font-size: 25px;
+  }
 }
