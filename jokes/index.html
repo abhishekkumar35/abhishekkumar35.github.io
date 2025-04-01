@@ -20,10 +20,6 @@
         <h2 id="joke_setup" style="width: 400px">Loading...</h2>
         <h3 id="joke_punchline"></h3>
       </div>
-      <div>
-        <h1>Hindi Joke</h1>
-        <h2 id="joke" style="width: 400px">Loading...</h2>
-      </div>
     </div>
     <script>
       fetch("https://official-joke-api.appspot.com/random_joke")
@@ -34,7 +30,7 @@
         .then((data) => {
           document.getElementById("joke_setup").textContent = data.setup;
           document.getElementById("joke_punchline").textContent =
-            ">>>  " + data.punchline;
+            "This:  " + data.punchline;
         });
 
       fetch(
